@@ -53,4 +53,5 @@ lazy.setup({
   {'ngmy/vim-rubocop'},
   {'tpope/vim-rails'},
   {'vim-ruby/vim-ruby'},
+  {'norcalli/nvim-colorizer.lua'},
 })
