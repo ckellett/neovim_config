@@ -54,4 +54,5 @@ lazy.setup({
   {'tpope/vim-rails'},
   {'vim-ruby/vim-ruby'},
   {'norcalli/nvim-colorizer.lua'},
+  {'navarasu/onedark.nvim'},
 })

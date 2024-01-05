@@ -28,7 +28,7 @@ vim.keymap.set({'n', 'v'}, '<leader>y', '"+y')
 -- Buffer Navigation
 vim.keymap.set('n', '<leader>n', ':bp<cr>')
 vim.keymap.set('n', '<leader>m', ':bn<cr>')
-vim.keymap.set('n', '<leader>c', ':bd<cr>')
+vim.keymap.set('n', '<leader>c', ':bd!<cr>')
 
 -- VimWiki
 vim.keymap.set('n', '<leader>ww', '<Plug>VimwikiIndex')
@@ -37,11 +37,11 @@ vim.keymap.set('n', '<leader>ww', '<Plug>VimwikiIndex')
 vim.keymap.set('n', '<leader>t', ':TestNearest<cr>')
 
 -- Colorscheme
-require('user.tokyonight')
-vim.opt.termguicolors = true
-vim.cmd.colorscheme('tokyonight')
+require('user.onedark')
+vim.cmd.colorscheme('onedark')
 
 -- Plugin Settings
+require('user.treesitter')
 require('user.lualine')
 require('user.nvimtree')
 require('user.telescope')
