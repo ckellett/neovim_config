@@ -1,11 +1,11 @@
 require('gitsigns').setup {
   signs = {
-    add          = { text = '+' },
-    change       = { text = '*' },
+    add          = { text = '﹢' },
+    change       = { text = '⋆' },
     delete       = { text = '_' },
     topdelete    = { text = '‾' },
-    changedelete = { text = '~' },
-    untracked    = { text = '┆' },
+    changedelete = { text = '∼' },
+    untracked    = { text = '┇' },
   },
   signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
   numhl      = false, -- Toggle with `:Gitsigns toggle_numhl`
@@ -18,7 +18,7 @@ require('gitsigns').setup {
   current_line_blame = false, -- Toggle with `:Gitsigns toggle_current_line_blame`
   current_line_blame_opts = {
     virt_text = true,
-    virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
+    virt_text_pos = 'right_align', -- 'eol' | 'overlay' | 'right_align'
     delay = 300,
     ignore_whitespace = false,
     virt_text_priority = 100,
@@ -71,7 +71,7 @@ require('gitsigns').setup {
     map('n', '<leader>hR', gs.reset_buffer)
     map('n', '<leader>hp', gs.preview_hunk)
     map('n', '<leader>hb', function() gs.blame_line{full=true} end)
-    map('n', '<leader>tb', gs.toggle_current_line_blame)
+    map('n', '<leader>jk', gs.toggle_current_line_blame)
     map('n', '<leader>hd', gs.diffthis)
     map('n', '<leader>hD', function() gs.diffthis('~') end)
     map('n', '<leader>td', gs.toggle_deleted)
