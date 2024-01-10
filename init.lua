@@ -37,8 +37,9 @@ vim.keymap.set('n', '<leader>ww', '<Plug>VimwikiIndex')
 vim.keymap.set('n', '<leader>t', ':TestNearest<cr>')
 
 -- Colorscheme
-require('user.onedark')
-vim.cmd.colorscheme('onedark')
+require('user.tokyonight')
+vim.opt.termguicolors = true
+vim.cmd.colorscheme 'tokyonight'
 
 -- Plugin Settings
 require('user.treesitter')

@@ -55,4 +55,5 @@ lazy.setup({
   {'vim-ruby/vim-ruby'},
   {'norcalli/nvim-colorizer.lua'},
   {'navarasu/onedark.nvim'},
+  {'savq/melange-nvim'},
 })
