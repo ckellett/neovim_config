@@ -36,6 +36,9 @@ vim.keymap.set('n', '<leader>ww', '<Plug>VimwikiIndex')
 -- Testing
 vim.keymap.set('n', '<leader>t', ':TestNearest<cr>')
 
+-- Remove Trailing Whitespace
+vim.keymap.set('n', '<leader>wt', [[:%s/\s\+$//e<cr>]])
+
 -- Colorscheme
 require('user.tokyonight')
 vim.opt.termguicolors = true
