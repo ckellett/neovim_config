@@ -56,5 +56,6 @@ lazy.setup({
   { 'norcalli/nvim-colorizer.lua' },
   { 'navarasu/onedark.nvim' },
   { 'savq/melange-nvim' },
-  { 'rose-pine/neovim', name = 'rose-pine' }
+  { 'rose-pine/neovim', name = 'rose-pine' },
+  { 'sainnhe/sonokai' }
 })
