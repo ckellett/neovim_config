@@ -31,6 +31,7 @@ lazy.path = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 lazy.opts = {}
 
 lazy.setup({
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   { 'folke/tokyonight.nvim' },
   { 'rmehri01/onenord.nvim' },
   { 'nvim-lualine/lualine.nvim' },

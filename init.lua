@@ -40,9 +40,9 @@ vim.keymap.set('n', '<leader>t', ':TestNearest<cr>')
 vim.keymap.set('n', '<leader>wt', [[:%s/\s\+$//e<cr>]])
 
 -- Colorscheme
-require('user.tokyonight')
+require('user.catppuccin')
 vim.opt.termguicolors = true
-vim.cmd.colorscheme 'tokyonight'
+vim.cmd.colorscheme 'catppuccin'
 
 -- Plugin Settings
 require('user.treesitter')
