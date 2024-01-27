@@ -74,4 +74,5 @@ require("nvim-tree").setup({
   },
 })
 
-vim.keymap.set('n', '<leader>d', ':NvimTreeToggle<cr>')
+-- Test driving NeoTree
+-- vim.keymap.set('n', '<leader>d', ':NvimTreeToggle<cr>')

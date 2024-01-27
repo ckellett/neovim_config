@@ -39,6 +39,9 @@ vim.keymap.set('n', '<leader>t', ':TestNearest<cr>')
 -- Remove Trailing Whitespace
 vim.keymap.set('n', '<leader>wt', [[:%s/\s\+$//e<cr>]])
 
+-- NeoTree
+vim.keymap.set('n', '<leader>d', ':Neotree toggle<cr>')
+
 -- Colorscheme
 require('user.catppuccin')
 vim.opt.termguicolors = true
