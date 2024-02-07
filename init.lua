@@ -42,6 +42,9 @@ vim.keymap.set('n', '<leader>wt', [[:%s/\s\+$//e<cr>]])
 -- NeoTree
 vim.keymap.set('n', '<leader>d', ':Neotree toggle<cr>')
 
+-- Lazy
+vim.keymap.set('n', '<leader>L', ':Lazy<cr>')
+
 -- Colorscheme
 require('user.catppuccin')
 vim.opt.termguicolors = true
