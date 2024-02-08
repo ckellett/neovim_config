@@ -24,5 +24,6 @@ config = function ()
     highlight = { enable = true },
     rainbow = { enable = true },
     indent = { enable = true, disable = { 'ruby' } },
+    additional_vim_regex_highlighting = false
   })
 end
