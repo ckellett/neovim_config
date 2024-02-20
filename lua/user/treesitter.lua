@@ -23,7 +23,7 @@ config = function ()
     sync_install = false,
     highlight = { enable = true },
     rainbow = { enable = true },
-    indent = { enable = true, disable = { 'ruby' } },
+    indent = { enable = true, disable = { } },
     additional_vim_regex_highlighting = false
   })
 end
