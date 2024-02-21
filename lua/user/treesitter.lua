@@ -17,7 +17,6 @@ config = function ()
       'ruby',
       'rust',
       'typescript',
-      'vim',
       'yaml'
     },
     sync_install = false,

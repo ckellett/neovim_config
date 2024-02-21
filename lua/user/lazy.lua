@@ -31,11 +31,10 @@ lazy.path = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 lazy.opts = {}
 
 lazy.setup({
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
   { 'folke/tokyonight.nvim' },
   { 'rmehri01/onenord.nvim' },
   { 'nvim-lualine/lualine.nvim' },
-  { 'kyazdani42/nvim-web-devicons' },
   { 'nvim-tree/nvim-tree.lua' },
   {
     'nvim-telescope/telescope.nvim',
@@ -60,13 +59,13 @@ lazy.setup({
   { 'rose-pine/neovim', name = 'rose-pine' },
   { 'sainnhe/sonokai' },
   {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v3.x',
     dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
-      -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons',
+      'MunifTanjim/nui.nvim',
+      '3rd/image.nvim',
     }
   },
 })
