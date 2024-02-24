@@ -1,4 +1,10 @@
-require("catppuccin").setup({
+return {
+  "catppuccin/nvim",
+ lazy = false,
+ priority = 1000,
+ name = "catppuccin",
+ config = function()
+  require("catppuccin").setup({
     flavour = "mocha",
     background = {
         light = "latte",
@@ -42,4 +48,7 @@ require("catppuccin").setup({
             indentscope_color = "",
         },
     },
-})
+  })
+  vim.cmd("colorscheme catppuccin")
+ end,
+}
