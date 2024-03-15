@@ -35,6 +35,5 @@ return {
     vim.keymap.set('n', '<leader>s', ':Telescope live_grep<cr>')
     vim.keymap.set('n', '<leader>b', ':Telescope buffers<cr>')
     vim.keymap.set('n', '<leader>cs', ':Telescope colorscheme<cr>')
-
   end,
 }
