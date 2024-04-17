@@ -5,8 +5,8 @@ return  {
       options = {
         theme = 'catppuccin',
         icons_enabled = true,
-        component_separators = '|',
-        section_separators = '',
+        component_separators = { left = '|', right = '|'},
+        section_separators = { left = '', right = ''},
         disabled_filetypes = {
           statusline = {
             'NvimTree',
