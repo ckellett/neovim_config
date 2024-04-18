@@ -9,7 +9,6 @@ return  {
         section_separators = { left = '', right = ''},
         disabled_filetypes = {
           statusline = {
-            'NvimTree',
             'neo-tree'
           }
         }
