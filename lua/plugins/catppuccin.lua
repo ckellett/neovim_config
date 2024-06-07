@@ -30,7 +30,7 @@ return {
         strings = {},
         variables = {},
         numbers = {},
-        booleans = {},
+        booleans = { "bold" },
         properties = {},
         types = {},
         operators = {},
