@@ -19,6 +19,7 @@ return {
         'ruby',
         'rust',
         'typescript',
+        'vue',
         'yaml'
       },
       sync_install = false,
