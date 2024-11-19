@@ -18,6 +18,7 @@ return {
         'regex',
         'ruby',
         'rust',
+        'terraform',
         'typescript',
         'vue',
         'yaml'
