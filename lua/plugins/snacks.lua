@@ -25,7 +25,7 @@ return {
 
     -- Keymaps using the Snacks API
     local picker = require("snacks").picker
-    
+
     vim.keymap.set("n", "<leader>f", function() picker.files() end, { desc = "Find Files" })
     vim.keymap.set("n", "<leader>s", function() picker.grep() end, { desc = "Live Grep" })
     vim.keymap.set("n", "<leader>b", function() picker.buffers() end, { desc = "Buffers" })

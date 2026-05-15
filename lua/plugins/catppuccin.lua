@@ -35,7 +35,11 @@ return {
         types = {},
         operators = {},
     },
-    color_overrides = {},
+    color_overrides = {
+        mocha = {
+            peach = "#56b1fc", -- Replace this hex with your preferred orange
+        },
+    },
     custom_highlights = {},
     integrations = {
         cmp = true,
@@ -49,6 +53,6 @@ return {
         },
     },
   })
-  vim.cmd("colorscheme nightfox")
+  -- vim.cmd("colorscheme catppuccin")
  end,
 }
