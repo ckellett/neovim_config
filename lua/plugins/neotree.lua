@@ -1,12 +1,13 @@
 return {
-  'nvim-neo-tree/neo-tree.nvim',
-  branch = 'v3.x',
+  "nvim-neo-tree/neo-tree.nvim",
+  branch = "v3.x",
   dependencies = {
-    'nvim-lua/plenary.nvim',
-    'nvim-tree/nvim-web-devicons',
-    'MunifTanjim/nui.nvim',
+    "nvim-lua/plenary.nvim",
+    "nvim-tree/nvim-web-devicons",
+    "MunifTanjim/nui.nvim",
   },
-  config = function()
-    vim.keymap.set('n', '<leader>d', ':Neotree toggle<cr>')
-  end,
+  cmd = "Neotree",
+  keys = {
+    { "<leader>d", "<cmd>Neotree toggle<cr>", desc = "Toggle file tree" },
+  },
 }

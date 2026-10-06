@@ -1,7 +1,6 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-local uv = vim.uv or vim.loop
 
-if not uv.fs_stat(lazypath) then
+if not vim.uv.fs_stat(lazypath) then
   vim.fn.system({
     "git",
     "clone",
@@ -18,5 +17,3 @@ require("lazy").setup({
   spec = { { import = "plugins" } },
   install = { colorscheme = { "kanagawa-wave" } },
 })
-
-vim.keymap.set('n', '<leader>L', ':Lazy<cr>')

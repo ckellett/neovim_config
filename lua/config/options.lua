@@ -1,9 +1,8 @@
 -- Must be set before any keymaps or plugins are loaded
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 
 vim.opt.number = true
 vim.opt.cursorline = true
-vim.opt.mouse = 'a'
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.hlsearch = false
@@ -15,11 +14,11 @@ vim.opt.termguicolors = true
 
 vim.opt.list = true
 vim.opt.listchars = {
-  tab = '|▶',
-  trail = '·',
-  nbsp = '○',
-  extends = '◣',
-  precedes = '◢',
+  tab = "|▶",
+  trail = "·",
+  nbsp = "○",
+  extends = "◣",
+  precedes = "◢",
 }
 
 -- Attach highlight groups to each cursor mode so colorschemes that define

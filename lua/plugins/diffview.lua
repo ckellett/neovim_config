@@ -1,35 +1,11 @@
 return {
-  'sindrets/diffview.nvim',
-  config = function()
-    vim.keymap.set(
-      'n',
-      '<leader>hh',
-      '<cmd>DiffviewFileHistory<cr>',
-      { desc = 'Repo history' }
-    )
-    vim.keymap.set(
-      'n',
-      '<leader>hf',
-      '<cmd>DiffviewFileHistory --follow %<cr>',
-      { desc = 'File history' }
-    )
-    vim.keymap.set(
-      'v',
-      '<leader>hl',
-      "<Esc><Cmd>'<,'>DiffviewFileHistory --follow<CR>",
-      { desc = 'Visual history' }
-    )
-    vim.keymap.set(
-      'n',
-      '<leader>hl',
-      "<Esc><Cmd>.DiffviewFileHistory --follow<CR>",
-      { desc = 'line history' }
-    )
-    vim.keymap.set(
-      'n',
-      '<leader>hc',
-      '<cmd>DiffviewClose<cr>',
-      { desc = 'Close Diffview' }
-    )
-  end
+  "sindrets/diffview.nvim",
+  cmd = { "DiffviewOpen", "DiffviewFileHistory", "DiffviewClose" },
+  keys = {
+    { "<leader>hh", "<cmd>DiffviewFileHistory<cr>", desc = "Repo history" },
+    { "<leader>hf", "<cmd>DiffviewFileHistory --follow %<cr>", desc = "File history" },
+    { "<leader>hl", "<cmd>.DiffviewFileHistory --follow<cr>", desc = "Line history" },
+    { "<leader>hl", "<esc><cmd>'<,'>DiffviewFileHistory --follow<cr>", mode = "v", desc = "Visual history" },
+    { "<leader>hc", "<cmd>DiffviewClose<cr>", desc = "Close Diffview" },
+  },
 }

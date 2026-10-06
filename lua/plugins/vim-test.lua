@@ -1,6 +1,6 @@
-return  {
+return {
   "janko-m/vim-test",
-  config = function()
-    vim.keymap.set('n', '<leader>t', ':TestNearest<cr>')
-  end,
+  keys = {
+    { "<leader>t", "<cmd>TestNearest<cr>", desc = "Run nearest test" },
+  },
 }
