@@ -1,27 +1,27 @@
 return {
   'nvim-treesitter/nvim-treesitter',
-  version = false, -- Last release is way too old, we need main branch
+  branch = 'main',
+  lazy = false, -- the main branch does not support lazy-loading
   build = ':TSUpdate',
-  event = { "BufReadPost", "BufNewFile" },
   config = function()
-    -- This ensures the plugin's /lua folder is definitely in the path
-    local status_ok, configs = pcall(require, "nvim-treesitter.configs")
-    if not status_ok then
-        return
-    end
+    local parsers = {
+      'bash', 'css', 'elixir', 'erlang', 'go', 'html', 'javascript',
+      'json', 'lua', 'python', 'regex', 'ruby', 'rust', 'terraform',
+      'typescript', 'vue', 'yaml', 'vim', 'vimdoc', 'query',
+    }
 
-    configs.setup({
-      ensure_installed = {
-        'bash', 'css', 'elixir', 'erlang', 'go', 'html', 'javascript',
-        'json', 'lua', 'python', 'regex', 'ruby', 'rust', 'terraform',
-        'typescript', 'vue', 'yaml', 'vim', 'vimdoc', 'query'
-      },
-      sync_install = false,
-      highlight = { 
-        enable = true,
-        additional_vim_regex_highlighting = false,
-      },
-      indent = { enable = true },
+    local ts = require('nvim-treesitter')
+    ts.install(parsers)
+
+    -- Enable highlighting and indentation for buffers that have a parser.
+    vim.api.nvim_create_autocmd('FileType', {
+      group = vim.api.nvim_create_augroup('treesitter_attach', { clear = true }),
+      callback = function(args)
+        local ok = pcall(vim.treesitter.start, args.buf)
+        if ok then
+          vim.bo[args.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        end
+      end,
     })
   end,
 }

@@ -1,12 +1,12 @@
 return {
-  'folke/tokyonight.nvim',
+  "folke/tokyonight.nvim",
+  lazy = true,
   config = function()
-    local tokyotheme = require('tokyonight')
-    tokyotheme.setup({
-      on_colors = function (colors)
-        colors.fg_gutter = '#79809c'
-        colors.orange = '#ab80d1'
-      end
+    require("tokyonight").setup({
+      on_colors = function(colors)
+        colors.fg_gutter = "#79809c"
+        colors.orange = "#ab80d1"
+      end,
     })
-  end
+  end,
 }

@@ -1,1 +1,4 @@
-return { 'savq/melange-nvim' }
+return {
+  "savq/melange-nvim",
+  lazy = true,
+}
